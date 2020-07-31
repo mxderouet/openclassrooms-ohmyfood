@@ -31,36 +31,90 @@ header {
     margin: 0 auto;
 }
 
-.menu {    
+.menu {   
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
     min-width: 300px;
+    min-height: 500px;
     /* width: 35%; */
-    margin-bottom: 10em;
+    margin-bottom: 100em;
     max-width: 35%;
-    width:35%; /*Notre bloc fera 300px de large*/
-    margin:auto;
+    width:35%;
+    height: 35%;
+    margin: 1em auto;
 }
 
 #carte-1 {
-    overflow:hidden;/*On empeche l'image de dépasser du bloc*/
-    display:block;
+    background-color:#fddfdb;
 }
+
+#carte-2 {
+    background-color: #fff5fe;
+    color: #c67413;
+}
+
+#carte-3 {
+    background-color:#eeefef;
+    color: #0228dd;
+}
+
+#carte-4 {
+    background-color:#fefffd;
+    color: #40973c;
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: auto;
+    min-height: 800px;
+    width: 80%;
+}
+
+#menu-1 {
+    background-color:#fddfdb;
+    color: #000;
+}
+
+#menu-2 {
+    background-color: #fff5fe;
+    color: #c67413;
+}
+
+#menu-3 {
+    background-color:#eeefef;
+    color: #0228dd;
+}
+
+#menu-4 {
+    background-color:#fefffd;
+    color: #40973c;
+}
+
+/*#carte-1 {
+    overflow:hidden;/*On empeche l'image de dépasser du bloc*/
+/*    display:block;
+/*}
 
 #img{transition:0.5s;} /* durée de l'animation en secondes*/
 
-#img:hover {
+/*#img:hover {
     transform : scale(1.2);
     opacity: 0.6;
 }
 
 .menu-img {
     width: 80%;
-}
+}*/
 
 .cta {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 1.85rem 5rem;  
     width: 20%;
     height: 1em;
