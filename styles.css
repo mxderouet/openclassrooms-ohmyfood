@@ -311,6 +311,13 @@ footer {
 
 /* remaining elements */
 
+#mentions-legales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
 a {
     text-decoration: none;
     color:#fcca46;
