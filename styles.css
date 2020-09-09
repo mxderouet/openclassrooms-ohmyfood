@@ -89,6 +89,7 @@ footer {
 .menu {   
     display: flex;
     justify-content: center; 
+    overflow: hidden;
     flex-direction: column;
     min-width: 300px;
     min-height: 500px;
@@ -339,7 +340,6 @@ a {
     color: #40973c;
 }
 
-
 .loading {
     font-size: 20em;
     font-family: sans-serif;
@@ -358,4 +358,36 @@ a {
   50%  { content: '..'; }
   75%  { content: '...'; }
   100% { content: ''; }
+}
+
+.menu:hover #title-menu-1 {
+    font-size: 250%;
+}
+
+.menu:hover #text-menu-1 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-2 {
+    font-size: 250%;
+}
+
+.menu:hover #text-menu-2 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-3 {
+    font-size: 350%;
+}
+
+.menu:hover #text-menu-3 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-4 {
+    font-size: 350%;
+}
+
+.menu:hover #text-menu-4 {
+    font-size: 300%;
 }
