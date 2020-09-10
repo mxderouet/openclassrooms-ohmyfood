@@ -179,6 +179,44 @@ footer {
     padding: 0 5em;
 }
 
+.menu {
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 10%;
+}
+
+.menu:hover #title-menu-1 {
+    font-size: 250%;
+}
+
+.menu:hover #text-menu-1 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-2 {
+    font-size: 250%;
+}
+
+.menu:hover #text-menu-2 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-3 {
+    font-size: 350%;
+}
+
+.menu:hover #text-menu-3 {
+    font-size: 250%;
+}
+
+.menu:hover #title-menu-4 {
+    font-size: 310%;
+}
+
+.menu:hover #text-menu-4 {
+    font-size: 280%;
+}
+
 /* *** FONTS & LINKS *** */
 
 /* menu #1 */
@@ -358,36 +396,4 @@ a {
   50%  { content: '..'; }
   75%  { content: '...'; }
   100% { content: ''; }
-}
-
-.menu:hover #title-menu-1 {
-    font-size: 250%;
-}
-
-.menu:hover #text-menu-1 {
-    font-size: 250%;
-}
-
-.menu:hover #title-menu-2 {
-    font-size: 250%;
-}
-
-.menu:hover #text-menu-2 {
-    font-size: 250%;
-}
-
-.menu:hover #title-menu-3 {
-    font-size: 350%;
-}
-
-.menu:hover #text-menu-3 {
-    font-size: 250%;
-}
-
-.menu:hover #title-menu-4 {
-    font-size: 350%;
-}
-
-.menu:hover #text-menu-4 {
-    font-size: 300%;
 }
