@@ -39,6 +39,33 @@ footer {
     font-size: 2em;
 }
 
+.call-to-action:after {
+    color: #fcca47;
+    display: inline-block;
+    animation: dotty steps(1,end) 2s infinite;
+    content: '';
+}
+
+.loading {
+    font-size: 20em;
+    font-family: sans-serif;
+    color: #569c87;
+}
+
+.loading:after {
+  display: inline-block;
+  animation: dotty steps(1,end) 2s infinite;
+  content: '';
+}
+
+@keyframes dotty {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
+
 @media screen and (max-width:640px) {
     .call-to-action, footer {
         font-size: 1em;
@@ -93,7 +120,6 @@ footer {
     flex-direction: column;
     min-width: 300px;
     min-height: 500px;
-    /* width: 35%; */
     margin-bottom: 100em;
     max-width: 35%;
     width:35%;
@@ -186,36 +212,20 @@ footer {
     padding-top: 10%;
 }
 
-.menu:hover #title-menu-1 {
-    font-size: 250%;
-}
-
-.menu:hover #text-menu-1 {
-    font-size: 250%;
+.menu:hover #title-menu-1,
+.menu:hover #text-menu-1,
+.menu:hover #text-menu-2,
+.menu:hover #title-menu-3,
+.menu:hover #text-menu-3,
+.menu:hover #title-menu-4,
+.menu:hover #text-menu-4 {
+    transition: transform .2s;
+    transform: scale(1.2);
 }
 
 .menu:hover #title-menu-2 {
-    font-size: 250%;
-}
-
-.menu:hover #text-menu-2 {
-    font-size: 250%;
-}
-
-.menu:hover #title-menu-3 {
-    font-size: 350%;
-}
-
-.menu:hover #text-menu-3 {
-    font-size: 250%;
-}
-
-.menu:hover #title-menu-4 {
-    font-size: 310%;
-}
-
-.menu:hover #text-menu-4 {
-    font-size: 280%;
+    transition: transform .2s;
+    transform: scale(1.1);
 }
 
 /* *** FONTS & LINKS *** */
@@ -281,6 +291,7 @@ footer {
 
 #menu-2 h2, #carte-2 h2 {
     font-family: 'PT Serif', serif;
+    font-size: 1.8em;
 }
 
 #menu-2-part-1 {
@@ -365,7 +376,7 @@ footer {
 }
 
 #carte-4 h2 {
-    font-size: 3em; 
+    font-size: 2.1em; 
 }
 
 #menu-4 h2, #menu-4 p, #carte-4 p {
@@ -435,22 +446,20 @@ a {
     color: #40973c;
 }
 
-.loading {
-    font-size: 20em;
-    font-family: sans-serif;
-    color: #569c87;
-}
-
-.loading:after {
-  display: inline-block;
-  animation: dotty steps(1,end) 2s infinite;
-  content: '';
-}
-
-@keyframes dotty {
-  0%   { content: ''; }
-  25%  { content: '.'; }
-  50%  { content: '..'; }
-  75%  { content: '...'; }
-  100% { content: ''; }
-}
+.expand{
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .expand:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #fcca47;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+  }
+  .expand:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0 50%;
+  }
